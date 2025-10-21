@@ -1,0 +1,126 @@
+:root {
+  --red: #b62c2c;
+  --green: #018106;
+  --ellipse-39: #06ba74;
+  --yellow: #eec600;
+  --nano: #080c73;
+  --cyan: #08c0cc;
+  --light-secondary-4: #f6f6f6;
+  --light-secondary-6: #F2F7F4;
+  --light-secondary-8: #ededee;
+  --light-secondary-10: #ececec;
+  --light-secondary-12: #e4e5e5;
+  --light-secondary-16: #cbcbcb;
+  --light-secondary-24: #c9cacb;
+  --light-secondary-64: #707374;
+  --light-secondary-86: #3f4344;
+  --light-secondary-100: #202425;
+  --basic-white: #ffffff;
+  --background-with-gradient: radial-gradient(
+    67.21% 57.27% at 42.64% 64.78%,
+    #e7e7e7 2%,
+    #f0f0f0 51.19%,
+    #fff 100%
+  );
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: IRANSans, sans-serif, monospace;
+  text-rendering: optimizeLegibility;
+  user-select: text;
+}
+html {
+  font-size: 16px;
+}
+body {
+  width: 100%;
+  max-width: 580px;
+  min-height: 100vh;
+  margin: 0 auto;
+  color: var(--light-secondary-100);
+  background: var(--basic-white);
+  font-size: 16px;
+  line-height: 16px;
+  direction: rtl;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: IRANSans, sans-serif, monospace;
+  font-weight: 500;
+  #app {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+nav,
+ul,
+li,
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+button,
+input,
+label,
+textarea {
+  font-family: IRANSans, sans-serif, monospace;
+  text-rendering: optimizeLegibility;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+div, img, .swiper-pagination-bullet {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.border-for-box {
+  width: fit-content;
+  height: fit-content;
+  padding: 8px 16px;
+  border: 1px solid var(--light-secondary-12);
+  border-radius: 16px;
+}

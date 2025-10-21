@@ -1,0 +1,182 @@
+@mixin typo46B {
+  font-size: 2.875rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo46M {
+  font-size: 2.875rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo46R {
+  font-size: 2.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo28B9 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo28B {
+  font-size: 1.75rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo28M {
+  font-size: 1.75rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo28R {
+  font-size: 1.75rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo26B {
+  font-size: 1.62rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo26M {
+  font-size: 1.62rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo26R {
+  font-size: 1.62rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo20B {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo20M {
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo20R {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo18B {
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo18M {
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo18R {
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo16B {
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo16M {
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo16R {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo14B {
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo14M {
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo14R {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo12B {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo12M {
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo12R {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo10B {
+  font-size: 0.6rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo10M {
+  font-size: 0.6rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin typo10R {
+  font-size: 0.6rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+@mixin skeleton {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-90deg, #efefef 0%, #fcfcfc 50%, #efefef 100%);
+    background-size: 400% 400%;
+    animation: skeleton 1.2s ease-in-out infinite;
+  }
+}
