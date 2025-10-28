@@ -370,19 +370,26 @@ export const useStaticData = defineStore('static-data', () => {
     }
 
     function addProductBanner(file: FileList | null): void {
-        if (!file) {
-            addStoreBody.value.products.banner = null
+        if (!file?.length) {
+            addStoreBody.value.products.banner = []
             return
         }
-        let index: number = JSON.parse(JSON.stringify(file.length))
-        while (index > 0) {
-            index = --index;
-            (addStoreBody.value.products.banner as ImageFile[]).push({
-                file: file.item(index),
-                name: ''
+
+        const banners: ImageFile[] = Array.isArray(addStoreBody.value.products.banner)
+            ? addStoreBody.value.products.banner.filter(Boolean)
+            : []
+
+        for (const f of Array.from(file)) {
+            if (!f) continue
+            banners.push({
+                file: f,
+                name: f.name
             })
         }
+
+        addStoreBody.value.products.banner = banners
     }
+
 
     function addProductCover(productIndex: number, file: FileList | null): void {
         if (!file) {
